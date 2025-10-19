@@ -5,9 +5,9 @@
 }
 
 body {
-    font-family: 'Courier New', monospace;
-    background-color: #000000;
-    color: #00ff00;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a2e;
+    color: #ffffff;
     line-height: 1.6;
 }
 
@@ -15,7 +15,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #111111;
+    background-color: #16213e;
     z-index: 1000;
     padding: 1rem 0;
 }
@@ -30,7 +30,7 @@ nav {
 }
 
 nav h1 {
-    color: #00d4ff;
+    color: #0f3460;
 }
 
 nav ul {
@@ -43,13 +43,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #00ff00;
+    color: #ffffff;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #00d4ff;
+    color: #0f3460;
 }
 
 section {
@@ -61,14 +61,14 @@ section {
 #hero {
     text-align: center;
     padding: 8rem 2rem;
-    background: linear-gradient(135deg, #000000, #111111);
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
 }
 
 .profile-img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 2px solid #00d4ff;
+    border: 3px solid #0f3460;
     margin-bottom: 2rem;
 }
 
@@ -91,12 +91,12 @@ section {
 
 .stat h3 {
     font-size: 2rem;
-    color: #00d4ff;
+    color: #0f3460;
 }
 
 .cta-btn {
-    background-color: #00ff00;
-    color: #000000;
+    background-color: #0f3460;
+    color: #ffffff;
     padding: 0.5rem 1rem;
     text-decoration: none;
     border-radius: 5px;
@@ -104,13 +104,14 @@ section {
 }
 
 .cta-btn:hover {
-    background-color: #00d4ff;
+    background-color: #ffffff;
+    color: #0f3460;
 }
 
 .container h2 {
     text-align: center;
     margin-bottom: 2rem;
-    color: #00d4ff;
+    color: #0f3460;
 }
 
 .skills-grid, .projects-grid {
@@ -119,31 +120,17 @@ section {
     gap: 2rem;
 }
 
-.skill-category ul, .project {
-    background-color: #111111;
+.skill-category ul, .project, .education-item, .blog-posts .post {
+    background-color: #16213e;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-.skill-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .project-icon {
     width: 50px;
     height: 50px;
     margin-bottom: 1rem;
-}
-
-.blog-posts .post {
-    background-color: #111111;
-    padding: 1.5rem;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .contact-links {
@@ -154,19 +141,19 @@ section {
 }
 
 .contact-links a {
-    color: #00ff00;
+    color: #0f3460;
     font-size: 2rem;
     transition: color 0.3s;
 }
 
 .contact-links a:hover {
-    color: #00d4ff;
+    color: #ffffff;
 }
 
 footer {
     text-align: center;
     padding: 2rem;
-    background-color: #111111;
+    background-color: #16213e;
 }
 
 @media (max-width: 768px) {
@@ -176,7 +163,7 @@ footer {
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: #111111;
+        background-color: #16213e;
         display: none;
     }
     nav ul.show {
