@@ -6,7 +6,6 @@
     <title>Sohail Yasser - Cybersecurity Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">  <!-- For animations -->
 </head>
 <body>
     <nav>
@@ -17,6 +16,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -24,58 +24,71 @@
     </nav>
 
     <section id="hero">
-        <div class="hero-content" data-aos="fade-in">
+        <div class="hero-content">
             <img src="images/profile.jpg" alt="Sohail Yasser" class="profile-img">
             <h2>Sohail Yasser</h2>
-            <p>Reverse Engineer | Cybersecurity Enthusiast</p>
+            <p>Aspiring SOC Analyst & Cybersecurity Professional</p>
             <div class="stats">
-                <div class="stat"><h3>500+</h3><p>Alerts Monitored</p></div>
-                <div class="stat"><h3>100+</h3><p>Events Analyzed</p></div>
-                <div class="stat"><h3>10+</h3><p>Projects</p></div>
+                <div class="stat"><h3>500+</h3><p>Security Alerts Monitored</p></div>
+                <div class="stat"><h3>100+</h3><p>Security Events Analyzed</p></div>
+                <div class="stat"><h3>200+</h3><p>Devices Monitored</p></div>
             </div>
             <a href="#projects" class="cta-btn">View Projects</a>
         </div>
     </section>
 
     <section id="about">
-        <div class="container" data-aos="fade-up">
+        <div class="container">
             <h2>About Me</h2>
-            <p>Passionate about threat detection, incident response, and reverse engineering. Based in Cairo, Egypt, with expertise in SIEM tools, malware analysis, and vulnerability exploitation.</p>
-            <p>As an aspiring SOC Analyst, I specialize in breaking down systems to understand and secure them. My journey includes hands-on experience with tools like Splunk, Metasploit, and Wireshark.</p>
+            <p>Passionate about threat detection, incident response, and vulnerability management. Based in Cairo, Egypt, with foundational knowledge in SIEM tools and malware analysis.</p>
+            <p>I am an aspiring SOC Analyst with foundational knowledge in threat detection, incident response, and vulnerability management. My expertise includes working with SIEM tools like Splunk and Security Onion, along with a basic understanding of malware analysis and network traffic monitoring.</p>
+            <p>I bring analytical skills and a proactive approach to support security operations while continuously learning from experienced professionals. My goal is to contribute meaningfully to cybersecurity teams while developing my expertise in the field.</p>
             <ul>
-                <li>Monitored 500+ security alerts weekly at Global Knowledge.</li>
-                <li>Conducted triage for 100+ events, enhancing threat containment.</li>
-                <li>Developed projects in blockchain and web security.</li>
+                <li>Monitored over 500 security alerts weekly using SIEM tools, reducing incident response time by 20%</li>
+                <li>Conducted incident triage and log analysis for 100+ security events, enabling faster threat containment</li>
+                <li>Supported endpoint detection and vulnerability scanning for more than 200 devices</li>
             </ul>
         </div>
     </section>
 
     <section id="skills">
-        <div class="container" data-aos="fade-up">
+        <div class="container">
             <h2>Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Reverse Engineering</h3>
+                    <h3>Specialization</h3>
                     <ul>
-                        <li><img src="images/python-logo.png" alt="Python" class="skill-icon"> IDA Pro, Ghidra</li>
-                        <li>Binary Analysis, Malware Disassembly</li>
-                        <li>Exploit Development</li>
+                        <li>Cyber Security & Digital Forensics</li>
+                        <li>OSINT Network Scanning Enumeration (NetBIOS, SMB, NFS)</li>
+                        <li>Vulnerability Assessment Exploitation</li>
+                        <li>Password Cracking (Hydra, John the Ripper)</li>
+                        <li>PDF Exploitation Metasploit</li>
+                        <li>Incident Response Web Security</li>
+                        <li>Blockchain Security</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Cybersecurity</h3>
+                    <h3>Technical Skills</h3>
                     <ul>
-                        <li>SIEM Tools (Splunk, Security Onion)</li>
-                        <li>Vulnerability Assessment, Penetration Testing</li>
-                        <li>Incident Response, Forensics</li>
+                        <li>TCP/IP OSI Model Subnetting</li>
+                        <li>Windows Server Active Directory</li>
+                        <li>Group Policy Firewall Management</li>
+                        <li>IDS/IPS</li>
+                        <li>Python Bash JavaScript</li>
+                        <li>HTML CSS Node.js REST API</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Programming</h3>
+                    <h3>Soft Skills</h3>
                     <ul>
-                        <li>Python, C++, Assembly</li>
-                        <li>Web Dev: HTML, CSS, JS, Node.js</li>
-                        <li>Tools: Metasploit, Nmap, Burp Suite</li>
+                        <li>Analytical Thinking</li>
+                        <li>Problem Solving</li>
+                        <li>Attention to Detail</li>
+                        <li>Communication</li>
+                        <li>Teamwork</li>
+                        <li>Adaptability</li>
+                        <li>Time Management</li>
+                        <li>Integrity</li>
                     </ul>
                 </div>
             </div>
@@ -83,49 +96,57 @@
     </section>
 
     <section id="projects">
-        <div class="container" data-aos="fade-up">
+        <div class="container">
             <h2>Projects</h2>
             <div class="projects-grid">
                 <div class="project">
                     <img src="images/blockchain-logo.png" alt="Blockchain" class="project-icon">
                     <h3>Blockchain-Based Cryptocurrency System</h3>
-                    <p>Full-stack crypto system with peer-to-peer sync and REST APIs.</p>
-                    <p><strong>Tech:</strong> Node.js, SHA256, TCP</p>
+                    <p>Full-stack cryptocurrency system with Node.js, REST APIs, and peer-to-peer synchronization.</p>
+                    <p><strong>Technologies:</strong> Node.js, REST API, TCP, SHA256</p>
                     <a href="https://github.com/yourusername/blockchain-project">GitHub</a>
                 </div>
                 <div class="project">
+                    <img src="images/python-logo.png" alt="Python" class="project-icon">
                     <h3>Web Vulnerability Scanner</h3>
-                    <p>Python tool for SQL Injection and XSS detection.</p>
-                    <p><strong>Tech:</strong> Python, OWASP</p>
+                    <p>Automated Python tool for detecting SQL Injection and XSS vulnerabilities with reporting.</p>
+                    <p><strong>Technologies:</strong> Python, HTTP Requests, OWASP Top 10, Security Testing</p>
                     <a href="https://github.com/yourusername/scanner-project">GitHub</a>
-                </div>
-                <div class="project">
-                    <h3>Malware Disassembler</h3>
-                    <p>Custom tool for binary analysis and disassembly.</p>
-                    <p><strong>Tech:</strong> Python, Assembly</p>
-                    <a href="https://github.com/yourusername/disassembler">GitHub</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Bachelor of Computer Science</h3>
+                <p>Bani Suef National University</p>
+                <p>GPA: 3.03 | Sep 2022 - Present</p>
+                <p>Specialization: Cyber Security and Digital Forensics</p>
+                <p>Active Member, Student Union Council</p>
+            </div>
+        </div>
+    </section>
+
     <section id="blog">
-        <div class="container" data-aos="fade-up">
+        <div class="container">
             <h2>Blog</h2>
             <div class="blog-posts">
                 <div class="post">
-                    <h3>Understanding SIEM Tools in SOC Operations</h3>
-                    <p>Exploring threat detection and incident response with Splunk.</p>
+                    <h3>Understanding SIEM Tools in Modern SOC Operations</h3>
+                    <p>Exploring the role of Security Information and Event Management tools in threat detection and incident response.</p>
                     <span>Coming Soon</span>
                 </div>
                 <div class="post">
-                    <h3>Network Enumeration Techniques</h3>
-                    <p>Best practices for scanning with Nmap and OSINT.</p>
+                    <h3>Network Enumeration Techniques and Best Practices</h3>
+                    <p>A comprehensive guide to network scanning and enumeration methods for security professionals.</p>
                     <span>Coming Soon</span>
                 </div>
                 <div class="post">
-                    <h3>Building Secure Web Apps</h3>
-                    <p>Developer guide to preventing vulnerabilities.</p>
+                    <h3>Building Secure Web Applications: A Developer's Guide</h3>
+                    <p>Essential security practices for web developers to prevent common vulnerabilities and attacks.</p>
                     <span>Coming Soon</span>
                 </div>
             </div>
@@ -133,23 +154,21 @@
     </section>
 
     <section id="contact">
-        <div class="container" data-aos="fade-up">
+        <div class="container">
             <h2>Contact</h2>
-            <p>Reach out for collaborations or opportunities.</p>
+            <p>Let's connect! Reach out for collaborations or opportunities.</p>
             <div class="contact-links">
                 <a href="mailto:sohail@example.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://github.com/yourusername"><i class="fab fa-github"></i></a>
                 <a href="https://linkedin.com/in/sohail-yasser"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/yourusername"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2023 Sohail Yasser. Built with ❤️</p>
+        <p>&copy; 2023 Sohail Yasser. All rights reserved.</p>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
-    <script>AOS.init();</script>
 </body>
 </html>
