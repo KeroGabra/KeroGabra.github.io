@@ -1,174 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sohail Yasser - Cybersecurity Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>KeroGabra — Jr Cybersecurity Engineer</title>
+    <meta name="description" content="KeroGabra — Jr Cybersecurity Engineer specializing in offensive security, pentesting and vulnerability assessment." />
+    <link rel="stylesheet" href="style.css" />
+    <!-- override theme variables for a 'more offensive / red-team' vibe -->
+    <style>
+        :root{
+            --accent-primary: #ff0044;
+            --accent-secondary: #a8002a;
+            --accent-tertiary: #330011;
+            --gradient-primary: linear-gradient(135deg, #ff0044 0%, #8b0000 100%);
+            --gradient-secondary: linear-gradient(135deg, #120006 0%, #2a0008 100%);
+            --shadow-light: rgba(255,0,68,0.08);
+            --shadow-medium: rgba(168,0,42,0.18);
+        }
+        body.light-mode {
+            --accent-primary: #d93b4b;
+            --accent-secondary: #b02b36;
+            --gradient-primary: linear-gradient(135deg,#d93b4b 0%,#b02b36 100%);
+        }
+        /* make avatar look more "offensive" */
+        .avatar-placeholder { font-size: 5.5rem; color: var(--accent-primary); border-color: rgba(255,0,68,0.9); }
+        .nav-logo a { color: var(--accent-primary); font-family: "Inter", monospace; letter-spacing: .6px; }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <h1>Sohail Yasser</h1>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <section id="hero">
-        <div class="hero-content">
-            <img src="images/profile.jpg" alt="Sohail Yasser" class="profile-img">
-            <h2>Sohail Yasser</h2>
-            <p>Aspiring SOC Analyst & Cybersecurity Professional</p>
-            <div class="stats">
-                <div class="stat"><h3>500+</h3><p>Security Alerts Monitored</p></div>
-                <div class="stat"><h3>100+</h3><p>Security Events Analyzed</p></div>
-                <div class="stat"><h3>200+</h3><p>Devices Monitored</p></div>
-            </div>
-            <a href="#projects" class="cta-btn">View Projects</a>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Passionate about threat detection, incident response, and vulnerability management. Based in Cairo, Egypt, with foundational knowledge in SIEM tools and malware analysis.</p>
-            <p>I am an aspiring SOC Analyst with foundational knowledge in threat detection, incident response, and vulnerability management. My expertise includes working with SIEM tools like Splunk and Security Onion, along with a basic understanding of malware analysis and network traffic monitoring.</p>
-            <p>I bring analytical skills and a proactive approach to support security operations while continuously learning from experienced professionals. My goal is to contribute meaningfully to cybersecurity teams while developing my expertise in the field.</p>
-            <ul>
-                <li>Monitored over 500 security alerts weekly using SIEM tools, reducing incident response time by 20%</li>
-                <li>Conducted incident triage and log analysis for 100+ security events, enabling faster threat containment</li>
-                <li>Supported endpoint detection and vulnerability scanning for more than 200 devices</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Specialization</h3>
-                    <ul>
-                        <li>Cyber Security & Digital Forensics</li>
-                        <li>OSINT Network Scanning Enumeration (NetBIOS, SMB, NFS)</li>
-                        <li>Vulnerability Assessment Exploitation</li>
-                        <li>Password Cracking (Hydra, John the Ripper)</li>
-                        <li>PDF Exploitation Metasploit</li>
-                        <li>Incident Response Web Security</li>
-                        <li>Blockchain Security</li>
-                    </ul>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#hero">KeroGabra</a>
                 </div>
-                <div class="skill-category">
-                    <h3>Technical Skills</h3>
-                    <ul>
-                        <li>TCP/IP OSI Model Subnetting</li>
-                        <li>Windows Server Active Directory</li>
-                        <li>Group Policy Firewall Management</li>
-                        <li>IDS/IPS</li>
-                        <li>Python Bash JavaScript</li>
-                        <li>HTML CSS Node.js REST API</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Soft Skills</h3>
-                    <ul>
-                        <li>Analytical Thinking</li>
-                        <li>Problem Solving</li>
-                        <li>Attention to Detail</li>
-                        <li>Communication</li>
-                        <li>Teamwork</li>
-                        <li>Adaptability</li>
-                        <li>Time Management</li>
-                        <li>Integrity</li>
-                    </ul>
+                <ul class="nav-menu">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button id="darkModeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
             </div>
-        </div>
-    </section>
+        </nav>
+    </header>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project">
-                    <img src="images/blockchain-logo.png" alt="Blockchain" class="project-icon">
-                    <h3>Blockchain-Based Cryptocurrency System</h3>
-                    <p>Full-stack cryptocurrency system with Node.js, REST APIs, and peer-to-peer synchronization.</p>
-                    <p><strong>Technologies:</strong> Node.js, REST API, TCP, SHA256</p>
-                    <a href="https://github.com/yourusername/blockchain-project">GitHub</a>
-                </div>
-                <div class="project">
-                    <img src="images/python-logo.png" alt="Python" class="project-icon">
-                    <h3>Web Vulnerability Scanner</h3>
-                    <p>Automated Python tool for detecting SQL Injection and XSS vulnerabilities with reporting.</p>
-                    <p><strong>Technologies:</strong> Python, HTTP Requests, OWASP Top 10, Security Testing</p>
-                    <a href="https://github.com/yourusername/scanner-project">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>Bachelor of Computer Science</h3>
-                <p>Bani Suef National University</p>
-                <p>GPA: 3.03 | Sep 2022 - Present</p>
-                <p>Specialization: Cyber Security and Digital Forensics</p>
-                <p>Active Member, Student Union Council</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="blog">
-        <div class="container">
-            <h2>Blog</h2>
-            <div class="blog-posts">
-                <div class="post">
-                    <h3>Understanding SIEM Tools in Modern SOC Operations</h3>
-                    <p>Exploring the role of Security Information and Event Management tools in threat detection and incident response.</p>
-                    <span>Coming Soon</span>
-                </div>
-                <div class="post">
-                    <h3>Network Enumeration Techniques and Best Practices</h3>
-                    <p>A comprehensive guide to network scanning and enumeration methods for security professionals.</p>
-                    <span>Coming Soon</span>
-                </div>
-                <div class="post">
-                    <h3>Building Secure Web Applications: A Developer's Guide</h3>
-                    <p>Essential security practices for web developers to prevent common vulnerabilities and attacks.</p>
-                    <span>Coming Soon</span>
+    <main>
+        <!-- Hero -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="hero-greeting">Hello, I'm</span>
+                            <span class="hero-name">KeroGabra</span>
+                        </h1>
+                        <p class="hero-subtitle">Jr Cybersecurity Engineer — Offensive & Pentesting</p>
+                        <p class="hero-description">
+                            Offensive security enthusiast focused on penetration testing, vulnerability assessments and
+                            red-team techniques. Comfortable with Nmap, Burp Suite, Metasploit, Python and hands-on
+                            network/endpoint testing. Based in Cairo, Egypt.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                            <a href="#projects" class="btn btn-secondary">View My Tools</a>
+                        </div>
+                        <div class="hero-social">
+                            <a href="mailto:kerogabra977@gmail.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            <a href="https://www.linkedin.com/in/kyrillos-gabra-9285981a" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <!-- GitHub link left generic; update if you have one -->
+                            <a href="#" class="social-link" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="tel:+201116828381" class="social-link" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="hero-avatar">
+                            <div class="avatar-placeholder">
+                                <!-- skull icon to emphasize offensive/red-team vibe -->
+                                <i class="fas fa-skull-crossbones"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Let's connect! Reach out for collaborations or opportunities.</p>
-            <div class="contact-links">
-                <a href="mailto:sohail@example.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://linkedin.com/in/sohail-yasser"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/yourusername"><i class="fab fa-github"></i></a>
+        <!-- About -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Professional Summary</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I’m a junior cybersecurity engineer with a strong foundation in offensive security,
+                            penetration testing, and vulnerability assessment. I focus on identifying and exploiting
+                            vulnerabilities to help harden systems, and I'm continuously improving my ethical-hacking skills.
+                        </p>
+                        <p>
+                            I have training in Cisco Cybersecurity, CCNA fundamentals, and hands-on experience with tools
+                            like Burp Suite, Metasploit, Nmap and Wireshark. I’m currently studying for OSCP and expanding
+                            my practical pentesting toolkit.
+                        </p>
+
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number">—</span>
+                                <span class="stat-label">Active Offensive Projects</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">—</span>
+                                <span class="stat-label">Red Team Tools Practiced</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">—</span>
+                                <span class="stat-label">Ongoing Certifications</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-info">
+                        <div class="info-card">
+                            <h3>Location</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Cairo, Egypt</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>Education</h3>
+                            <p><i class="fas fa-graduation-cap"></i> Bachelor of Navigation Science & Space Technology</p>
+                            <p class="info-detail">Beni-Suef University — Sep 2021 – Aug 2026</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>Current Focus</h3>
+                            <p><i class="fas fa-bug"></i> Offensive Security / Penetration Testing / Vulnerability Assessment</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <p>&copy; 2023 Sohail Yasser. All rights reserved.</p>
-    </footer>
+        <!-- Skills -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills & Expertise</h2>
+                    <p class="section-subtitle">Technical and Professional Competencies</p>
+                </div>
 
-    <script src="script.js"></script>
-</body>
-</html>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-shield-virus"></i>
+                            <h3>Offensive Security</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Penetration Testing</span>
+                            <span class="skill-tag">Burp Suite</span>
+                            <span class="skill-tag">Metasploit</span>
+                            <span class="skill-tag">Vulnerability Assessment</span>
+                            <span class="skill-tag">OSINT</span>
+                            <span class="skill-tag">Exploitation</span>
+                            <span class="skill-tag">Access Control Testing</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-network-wired"></i>
+                            <h3>Networking & Tools</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Nmap</span>
+                            <span class="skill-tag">Wireshark</span>
+                            <span class="skill-tag">Cisco CyberOps</span>
+                            <span class="skill-tag">Firewall Management</span>
+                            <span class="skill-tag">Virtualization Security</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Scripting & Automation</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Bash</span>
+                            <span class="skill-tag">Basic Web Dev (MERN exposure)</span>
+                            <span class="skill-tag">LabVIEW</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-user-secret"></i>
+                            <h3>Other</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Digital Forensics</span>
+                            <span class="skill-tag">Endpoint Protection</span>
+                            <span class="skill-tag">SOC Investigation Skills</span>
+                            <span class="skill-tag">Report Writing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certifications">
+                    <h3>Certifications</h3>
+                    <div class="cert-item">
+                        <i class="fas fa-certificate"></i>
+                        <div class="cert-info">
+                            <h4>Cisco CyberOps Associate</h4>
+                            <p>Netriders / Cisco training & badges</p>
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-certificate"></i>
+                        <div class="cert-info">
+                            <h4>CompTIA Security+</h4>
+                            <p>Netriders Academy</p>
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-certificate"></i>
+                        <div class="cert-info">
+                            <h4>eCIR Incident Responder</h4>
+                            <p>Netriders Academy</p>
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-certificate"></i>
+                        <div class="cert-info">
+                            <h4>OSCP — Self Study (in progress)</h4>
+                            <p>Offensive Security study path</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Work / Tools</h2>
+                    <p class="section-subtitle">Tools & sample projects that demonstrate offensive skills</p>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card" data-project="scanner">
+                        <div class="project-image"><i class="fas fa-bug"></i></div>
+                        <div class="project-content">
+                            <h3>Web Vulnerability Scanner</h3>
+                            <p>Automated Python scanner for identifying common web vulnerabilities (SQLi, XSS) and generating reports.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">OWASP</span>
+                                <span class="tech-tag">Automation</span>
+                                <span class="tech-tag">Reporting</span>
+                            </div>
+                            <button class="project-btn">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-project="blockchain">
+                        <div class="project-image"><i class="fab fa-bitcoin"></i></div>
+                        <div class="project-content">
+                            <h3>Proof-of-Concept Blockchain</h3>
+                            <p>Full-stack project showcasing cryptographic understanding and networked peers (useful for secure communications experiments).</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">SHA256</span>
+                                <span class="tech-tag">P2P</span>
+                            </div>
+                            <button class="project-btn">View Details</button>
