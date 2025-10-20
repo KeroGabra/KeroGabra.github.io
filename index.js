@@ -107,7 +107,7 @@ function initProjectModals() {
                 'Exportable reports (JSON / HTML)',
                 'False-positive reduction via response fingerprinting'
             ],
-            github: '#', // update to your repo
+            github: 'https://github.com/KeroGabra/Web-Vulnerability-Scanner',
             demo: '#'
         },
         blockchain: {
@@ -120,7 +120,7 @@ function initProjectModals() {
                 'Transaction signing & verification',
                 'Minimalist API for experimentation'
             ],
-            github: '#',
+            github: 'https://github.com/KeroGabra/Blockchain-POC',
             demo: '#'
         }
     };
@@ -335,4 +335,3 @@ function initAccessibility(){
 
 /* PRELOAD */
 (function preload(){ const imgs = []; /* add critical image sources if any */ })();
-
