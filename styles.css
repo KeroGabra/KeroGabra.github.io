@@ -226,3 +226,22 @@ section{padding:5.25rem 0}
 
 /* Accessibility focus */
 :focus{outline:2px solid rgba(255,0,68,0.14);outline-offset:2px}
+
+/* overrides and additions from inline style block */
+:root{
+    --accent-primary: #ff0044;
+    --accent-secondary: #a8002a;
+    --accent-tertiary: #330011;
+    --gradient-primary: linear-gradient(135deg, #ff0044 0%, #8b0000 100%);
+    --gradient-secondary: linear-gradient(135deg, #120006 0%, #2a0008 100%);
+    --shadow-light: rgba(255,0,68,0.08);
+    --shadow-medium: rgba(168,0,42,0.18);
+}
+body.light-mode {
+    --accent-primary: #d93b4b;
+    --accent-secondary: #b02b36;
+    --gradient-primary: linear-gradient(135deg,#d93b4b 0%,#b02b36 100%);
+}
+/* make avatar look more "offensive" */
+.avatar-placeholder { font-size: 5.5rem; color: var(--accent-primary); border-color: rgba(255,0,68,0.9); }
+.nav-logo a { color: var(--accent-primary); font-family: "Inter", monospace; letter-spacing: .6px; }
